@@ -8,7 +8,7 @@ Des requêtes GET pour des lectures de la base ou des requêtes POST pour des cr
 
 _lecture de toute la table d'images de tshirts: localhost/images/tshirts/all
 
-_Ajout d'une nouvelle image: localhost/images/tshirt + body={"tshirt_name":"...","type":"jpg|png|gif","url":"..."}
+_Ajout d'une nouvelle image: localhost/images/tshirt + body={"tshirt_name":"...","type":" jpg | png | gif ","url":"..."}
 
 _Ajout d'un nouveau tag: localhost/images/tags + body={tag_name":"..."}
 
