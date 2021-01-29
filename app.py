@@ -94,7 +94,7 @@ def api_tags_create():
     conn.close()
     return jsonify(name)
 
-@app.route('images/tags/all',methods=['GET'])
+@app.route('/images/tags/all',methods=['GET'])
 def api_tags_all():
     # Requête en GET pour récupérer tous les tags
     conn=sqlite3.connect('images.db')
@@ -104,7 +104,7 @@ def api_tags_all():
     conn.close()
     return jsonify(all_tags)
 
-@app.route('images/tshirts/tags',methods=['POST'])
+@app.route('/images/tshirts/tags',methods=['POST'])
 def api_tshirt_tag():
     # Requête en POST pour ajouter un tag à une image
     request_data=request.get_json()
@@ -119,7 +119,7 @@ def api_tshirt_tag():
     conn.close()
     return '<p>Requête validée<p>'
 
-@app.route('images/tshirts/<int:id_tshirt>/tags')
+@app.route('/images/tshirts/<int:id_tshirt>/tags')
 def api_filter_tag(id_tshirt):
     # Requête en GET pour obtenir tous les tags d'une image
     conn=sqlite3.connect('images.db')
@@ -129,7 +129,7 @@ def api_filter_tag(id_tshirt):
     conn.close()
     return jsonify(tshirt_tag)
 
-@app.route('images/tshirts/tags/all')
+@app.route('/images/tshirts/tags/all')
 def api_tshirt_tag_all():
     # Requête en GET pour obtenir toutes les images qui ont au moins un tag
     conn=sqlite3.connect('images.db')
