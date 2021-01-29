@@ -21,3 +21,4 @@ _Lecture de tous les tags d'une image: localhost/images/tshirts/id_tshirt/tags (
 _Lecture de tous les tshirts ayant au moins 1 tag: localhost/images/tshirts/tags/all
 
 
+Pour fonctionner, l'api a besoin de python 3.7 et de Flask. Pour lancer l'api, il faut lancer le fichier api.py avec python puis utiliser un navigateur ou postman.
